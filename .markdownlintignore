@@ -1,0 +1,5 @@
+# Игнорировать кэши и зависимости
+.bun/
+node_modules/
+.cache/
+.vscode/
