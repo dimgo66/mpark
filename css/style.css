@@ -22,9 +22,9 @@
   --clr-cream:      #faf7f2;
   --clr-soft:       #f5f0e8;
   --clr-white:      #ffffff;
-  --clr-text:       #2a2a3e;
-  --clr-text-muted: #6b6b80;
-  --clr-border:     #e0d9cc;
+  --clr-text:       #1a1a2e;
+  --clr-text-muted: #4a4a5e;
+  --clr-border:     #c9c0b0;
 
   /* Типографика */
   --ff-serif:   'Cormorant Garamond', 'Georgia', serif;
@@ -71,6 +71,19 @@ a   { color: inherit; text-decoration: none; }
   max-width: var(--max-w);
   margin: 0 auto;
   padding: 0 24px;
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .btn {
@@ -234,7 +247,7 @@ a   { color: inherit; text-decoration: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 37%;
+  object-position: center 45%;
   z-index: 0;
 }
 
@@ -317,7 +330,6 @@ a   { color: inherit; text-decoration: none; }
   .hero-scroll {
     animation: none;
   }
-}
 }
 
 @keyframes bounce {
@@ -682,7 +694,7 @@ a   { color: inherit; text-decoration: none; }
 
 .books-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-bottom: 40px;
 }

@@ -32,7 +32,8 @@
         <span class="logo-sep">|</span>
         <span class="logo-ru">Михаил Пак</span>
       </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Открыть меню">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Меню</span>
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-menu" id="nav-menu">
@@ -59,11 +60,14 @@
         <a href="#gallery" class="btn btn-outline">Галерея</a>
       </div>
     </div>
-    <div class="hero-scroll">
+    <div class="hero-scroll" aria-hidden="true">
       <span>Листать</span>
-      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      <i class="fas fa-chevron-down"></i>
     </div>
   </section>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
 
   <!-- ABOUT -->
   <section class="section" id="about">
@@ -106,8 +110,8 @@
 
           <p>Номинант <strong>Букеровской премии</strong> 1997 года. Перевёл несколько корейских романов на русский язык.</p>
 
+          <h3 class="awards-title">Литературные премии</h3>
           <ul class="awards-grid" aria-label="Литературные премии">
-            <h3 class="awards-title">Литературные премии</h3>
             <li class="award-item">
               <span class="award-year">1999</span>
               <span class="award-text">Премия журнала «Korean Expatriate Literature» (Лос-Анджелес) — за рассказ «Дождь»</span>
@@ -263,9 +267,9 @@
         </div>
 
         <div class="gallery-item gallery-item-more">
-          <a href="https://www.vtornik.online/galereya" target="_blank" rel="noopener" class="gallery-more-link">
+          <a href="https://www.vtornik.online/galereya" target="_blank" rel="noopener" class="gallery-more-link" aria-label="Больше работ в галерее журнала «Вторник»">
             <div class="gallery-more-inner">
-              <i class="fas fa-images"></i>
+              <i class="fas fa-images" aria-hidden="true"></i>
               <span>Больше работ</span>
               <small>в галерее журнала «Вторник»</small>
             </div>
@@ -294,42 +298,6 @@
       <div class="tab-panel tab-panel--active" id="tab-novels">
         <div class="books-grid">
           <div class="book-card">
-            <div class="book-cover book-cover--1">
-              <i class="fas fa-book-open"></i>
-            </div>
-            <div class="book-info">
-              <h3>Охотник</h3>
-              <span class="book-year">1996</span>
-              <p>Роман</p>
-              <a href="https://royallib.com/author/pak_mihail.html" target="_blank" rel="noopener" class="book-link">Читать на RoyalLib <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="book-card">
-            <div class="book-cover book-cover--2">
-              <i class="fas fa-book-open"></i>
-            </div>
-            <div class="book-info">
-              <h3>Пристань ангелов</h3>
-              <span class="book-year">1998</span>
-              <p>Роман</p>
-              <a href="https://royallib.com/author/pak_mihail.html" target="_blank" rel="noopener" class="book-link">Читать на RoyalLib <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="book-card">
-            <div class="book-cover book-cover--3">
-              <i class="fas fa-book-open"></i>
-            </div>
-            <div class="book-info">
-              <h3>Танец белой курицы</h3>
-              <span class="book-year">2002</span>
-              <p>Роман</p>
-              <a href="https://royallib.com/author/pak_mihail.html" target="_blank" rel="noopener" class="book-link">Читать на RoyalLib <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="book-card">
             <div class="book-cover book-cover--4">
               <i class="fas fa-book-open"></i>
             </div>
@@ -337,19 +305,7 @@
               <h3>Лёгкое путешествие по реке</h3>
               <span class="book-year">2007</span>
               <p>Роман · Премия Катаева 2007</p>
-              <a href="https://royallib.com/author/pak_mihail.html" target="_blank" rel="noopener" class="book-link">Читать на RoyalLib <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="book-card">
-            <div class="book-cover book-cover--5">
-              <i class="fas fa-book-open"></i>
-            </div>
-            <div class="book-info">
-              <h3>Мандарины для Хелен</h3>
-              <span class="book-year">2013</span>
-              <p>Роман</p>
-              <a href="https://royallib.com/author/pak_mihail.html" target="_blank" rel="noopener" class="book-link">Читать на RoyalLib <i class="fas fa-arrow-right"></i></a>
+              <a href="https://royallib.com/author/pak_mihail.html" target="_blank" rel="noopener" class="book-link">Читать на RoyalLib <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
             </div>
           </div>
 
@@ -361,16 +317,13 @@
               <h3>Натюрморт с яблоками</h3>
               <span class="book-year">2001</span>
               <p>Повесть · Премия Катаева 2001</p>
-              <a href="https://royallib.com/author/pak_mihail.html" target="_blank" rel="noopener" class="book-link">Читать на RoyalLib <i class="fas fa-arrow-right"></i></a>
+              <a href="https://royallib.com/author/pak_mihail.html" target="_blank" rel="noopener" class="book-link">Читать на RoyalLib <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
         <div class="books-more">
-          <a href="https://royallib.com/author/pak_mihail.html" target="_blank" rel="noopener" class="btn btn-primary">
-            <i class="fas fa-book"></i> Все книги на RoyalLib
-          </a>
-          <a href="https://koryo-saram.site/proizvedeniya-mihaila-paka/" target="_blank" rel="noopener" class="btn btn-secondary">
-            <i class="fas fa-list"></i> Все произведения на Корё Сарам
+          <a href="https://koryo-saram.site/proizvedeniya-mihaila-paka/" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fas fa-list" aria-hidden="true"></i> Все произведения на Корё Сарам
           </a>
         </div>
       </div>
@@ -440,7 +393,7 @@
         </div>
         <div class="books-more">
           <a href="https://koryo-saram.site/proizvedeniya-mihaila-paka/" target="_blank" rel="noopener" class="btn btn-primary">
-            <i class="fas fa-list"></i> Все произведения на Корё Сарам
+            <i class="fas fa-list" aria-hidden="true"></i> Все произведения на Корё Сарам
           </a>
         </div>
       </div>
@@ -457,7 +410,7 @@
             <div class="book-info">
               <h3>따뜻한 영혼</h3>
               <p class="book-transliteration">«Тёплая душа»</p>
-              <a href="https://store.kyobobook.co.kr/person/detail/1113387501" target="_blank" rel="noopener" class="book-link">Kyobo Book <i class="fas fa-arrow-right"></i></a>
+              <a href="https://store.kyobobook.co.kr/person/detail/1113387501" target="_blank" rel="noopener" class="book-link">Kyobo Book <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
             </div>
           </div>
           <div class="book-card">
@@ -467,7 +420,7 @@
             <div class="book-info">
               <h3>예올리</h3>
               <p class="book-transliteration">«Эолли» — «Книга года»</p>
-              <a href="https://store.kyobobook.co.kr/person/detail/1113387501" target="_blank" rel="noopener" class="book-link">Kyobo Book <i class="fas fa-arrow-right"></i></a>
+              <a href="https://store.kyobobook.co.kr/person/detail/1113387501" target="_blank" rel="noopener" class="book-link">Kyobo Book <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
             </div>
           </div>
           <div class="book-card">
@@ -477,7 +430,7 @@
             <div class="book-info">
               <h3>밤은 태양이다</h3>
               <p class="book-transliteration">«Ночь — это тоже солнце»</p>
-              <a href="https://product.kyobobook.co.kr/detail/S000001971333" target="_blank" rel="noopener" class="book-link">Kyobo Book <i class="fas fa-arrow-right"></i></a>
+              <a href="https://product.kyobobook.co.kr/detail/S000001971333" target="_blank" rel="noopener" class="book-link">Kyobo Book <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
             </div>
           </div>
           <div class="book-card">
@@ -487,13 +440,13 @@
             <div class="book-info">
               <h3>사과가 있는 풍경</h3>
               <p class="book-transliteration">«Пейзаж с яблоком»</p>
-              <a href="https://product.kyobobook.co.kr/detail/S000001971329" target="_blank" rel="noopener" class="book-link">Kyobo Book <i class="fas fa-arrow-right"></i></a>
+              <a href="https://product.kyobobook.co.kr/detail/S000001971329" target="_blank" rel="noopener" class="book-link">Kyobo Book <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
         <div class="books-more">
           <a href="https://store.kyobobook.co.kr/person/detail/1113387501" target="_blank" rel="noopener" class="btn btn-primary">
-            <i class="fas fa-book"></i> Все книги на Kyobo Book Store
+            <i class="fas fa-book" aria-hidden="true"></i> Все книги на Kyobo Book Store
           </a>
         </div>
       </div>
@@ -527,7 +480,7 @@
             </div>
           </div>
           <a href="https://www.vtornik.online/autors/%D0%BF%D0%B0%D0%BA" target="_blank" rel="noopener" class="btn btn-primary">
-            <i class="fas fa-user"></i> Страница автора в «Вторнике»
+            <i class="fas fa-user" aria-hidden="true"></i> Страница автора в «Вторнике»
           </a>
         </div>
       </div>
@@ -541,7 +494,7 @@
             <h4>Три дня на острове</h4>
             <p>Рассказ</p>
           </div>
-          <a href="https://www.vtornik.online/autors/%D0%BF%D0%B0%D0%BA" target="_blank" rel="noopener" class="vt-issue-link"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://www.vtornik.online/autors/%D0%BF%D0%B0%D0%BA" target="_blank" rel="noopener" class="vt-issue-link" aria-label="Открыть публикацию"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
         </div>
 
         <div class="vtornik-issue">
@@ -550,7 +503,7 @@
             <h4>Полёт на кукурузнике. Капля росы</h4>
             <p>Рассказы</p>
           </div>
-          <a href="https://www.vtornik.online/News/94.03" target="_blank" rel="noopener" class="vt-issue-link"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://www.vtornik.online/News/94.03" target="_blank" rel="noopener" class="vt-issue-link" aria-label="Открыть публикацию"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
         </div>
 
         <div class="vtornik-issue">
@@ -559,7 +512,7 @@
             <h4>Посылка с монпансье</h4>
             <p>Рассказ</p>
           </div>
-          <a href="https://www.vtornik.online/autors/%D0%BF%D0%B0%D0%BA" target="_blank" rel="noopener" class="vt-issue-link"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://www.vtornik.online/autors/%D0%BF%D0%B0%D0%BA" target="_blank" rel="noopener" class="vt-issue-link" aria-label="Открыть публикацию"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
         </div>
 
         <div class="vtornik-issue">
@@ -568,7 +521,7 @@
             <h4>Флора</h4>
             <p>Рассказ</p>
           </div>
-          <a href="https://www.vtornik.online/autors/%D0%BF%D0%B0%D0%BA" target="_blank" rel="noopener" class="vt-issue-link"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://www.vtornik.online/autors/%D0%BF%D0%B0%D0%BA" target="_blank" rel="noopener" class="vt-issue-link" aria-label="Открыть публикацию"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
         </div>
 
         <div class="vtornik-issue vtornik-issue--highlight">
@@ -577,7 +530,7 @@
             <h4>Родник в горах</h4>
             <p>Рассказ</p>
           </div>
-          <a href="https://www.vtornik.online/vtornikmag/%E2%84%96-55-(74)-%D0%BC%D0%B0%D1%80%D1%82-2024" target="_blank" rel="noopener" class="vt-issue-link"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://www.vtornik.online/vtornikmag/%E2%84%96-55-(74)-%D0%BC%D0%B0%D1%80%D1%82-2024" target="_blank" rel="noopener" class="vt-issue-link" aria-label="Открыть публикацию"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
         </div>
 
         <div class="vtornik-issue">
@@ -586,7 +539,7 @@
             <h4>О Чжон Тоне</h4>
             <p>Эссе</p>
           </div>
-          <a href="https://www.vtornik.online/autors/%D0%BF%D0%B0%D0%BA" target="_blank" rel="noopener" class="vt-issue-link"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://www.vtornik.online/autors/%D0%BF%D0%B0%D0%BA" target="_blank" rel="noopener" class="vt-issue-link" aria-label="Открыть публикацию"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
         </div>
 
         <div class="vtornik-issue">
@@ -595,7 +548,7 @@
             <h4>Недопетая песня Ким Ки Дука</h4>
             <p>Историко-культурологическое эссе</p>
           </div>
-          <a href="https://www.vtornik.online/News/70.09" target="_blank" rel="noopener" class="vt-issue-link"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://www.vtornik.online/News/70.09" target="_blank" rel="noopener" class="vt-issue-link" aria-label="Открыть публикацию"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
         </div>
 
         <div class="vtornik-issue">
@@ -604,7 +557,7 @@
             <h4>Кот Захарка</h4>
             <p>Рассказ</p>
           </div>
-          <a href="https://www.vtornik.online/autors/%D0%BF%D0%B0%D0%BA" target="_blank" rel="noopener" class="vt-issue-link"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://www.vtornik.online/autors/%D0%BF%D0%B0%D0%BA" target="_blank" rel="noopener" class="vt-issue-link" aria-label="Открыть публикацию"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
         </div>
 
         <div class="vtornik-issue">
@@ -613,7 +566,7 @@
             <h4>Такое короткое лето</h4>
             <p>Рассказ</p>
           </div>
-          <a href="https://koryo-saram.site/mihail-pak-takoe-korotkoe-leto/" target="_blank" rel="noopener" class="vt-issue-link"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://koryo-saram.site/mihail-pak-takoe-korotkoe-leto/" target="_blank" rel="noopener" class="vt-issue-link" aria-label="Открыть публикацию"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
         </div>
 
         <div class="vtornik-issue">
@@ -622,17 +575,17 @@
             <h4>Сны о России</h4>
             <p>Рассказ</p>
           </div>
-          <a href="https://www.vtornik.online/autors/%D0%BF%D0%B0%D0%BA" target="_blank" rel="noopener" class="vt-issue-link"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://www.vtornik.online/autors/%D0%BF%D0%B0%D0%BA" target="_blank" rel="noopener" class="vt-issue-link" aria-label="Открыть публикацию"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
         </div>
 
       </div>
 
       <div class="vtornik-footer">
         <a href="https://www.vtornik.online/vtornikmag/%E2%84%96-7-(94)-%D0%BC%D0%B0%D0%B9-2025" target="_blank" rel="noopener" class="btn btn-secondary">
-          <i class="fas fa-book-open"></i> Последний номер журнала
+          <i class="fas fa-book-open" aria-hidden="true"></i> Последний номер журнала
         </a>
         <a href="https://www.vtornik.online/galereya" target="_blank" rel="noopener" class="btn btn-secondary">
-          <i class="fas fa-images"></i> Галерея живописи
+          <i class="fas fa-images" aria-hidden="true"></i> Галерея живописи
         </a>
       </div>
     </div>
@@ -650,7 +603,7 @@
       <div class="buy-grid">
 
         <div class="buy-section">
-          <h3 class="buy-section-title"><i class="fas fa-shopping-bag"></i> Купить книги</h3>
+          <h3 class="buy-section-title"><i class="fas fa-shopping-bag" aria-hidden="true"></i> Купить книги</h3>
           <div class="buy-cards">
 
             <a href="https://www.ozon.ru/product/belye-ozera-noch-eto-tozhe-solntse-mandariny-dlya-helen-izbrannye-sochineniya-t-1-pak-mihail-3392160876/" target="_blank" rel="noopener" class="buy-card">
@@ -660,7 +613,7 @@
                 <span>Белые озёра. Ночь — это тоже солнце. Мандарины для Хелен</span>
                 <div class="buy-price">бумага / эл. книга</div>
               </div>
-              <i class="fas fa-arrow-right"></i>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
 
             <a href="https://www.ozon.ru/product/natyurmort-s-yablokami-legkoe-puteshestvie-po-reke-tanets-beloy-kuritsy-muravinyy-gorod-t-2-3503256498/" target="_blank" rel="noopener" class="buy-card">
@@ -670,7 +623,7 @@
                 <span>Натюрморт с яблоками. Лёгкое путешествие по реке. Танец белой курицы. Муравьиный город</span>
                 <div class="buy-price">619 ₽</div>
               </div>
-              <i class="fas fa-arrow-right"></i>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
 
             <a href="https://azon.market/belye-ozera-noch-jeto-tozhe-solnce-mandariny-dlja-helen-iz-id-3075829" target="_blank" rel="noopener" class="buy-card">
@@ -679,7 +632,7 @@
                 <strong>Том 1 на Azon.market</strong>
                 <span>Белые озёра. Ночь — это тоже солнце. Мандарины для Хелен</span>
               </div>
-              <i class="fas fa-arrow-right"></i>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
 
             <a href="https://azon.market/knigi/natjurmort-s-jablokami-legkoe-puteshestvie-po-reke-tanec-belo-id-3085586" target="_blank" rel="noopener" class="buy-card">
@@ -688,14 +641,14 @@
                 <strong>Том 2 на Azon.market</strong>
                 <span>Натюрморт с яблоками. Лёгкое путешествие по реке. Танец белой курицы. Муравьиный город</span>
               </div>
-              <i class="fas fa-arrow-right"></i>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
 
           </div>
         </div>
 
         <div class="buy-section">
-          <h3 class="buy-section-title"><i class="fas fa-download"></i> Скачать бесплатно</h3>
+          <h3 class="buy-section-title"><i class="fas fa-download" aria-hidden="true"></i> Скачать бесплатно</h3>
           <div class="buy-cards">
 
             <a href="https://royallib.com/author/pak_mihail.html" target="_blank" rel="noopener" class="buy-card">
@@ -704,7 +657,7 @@
                 <strong>RoyalLib.com</strong>
                 <span>Электронная библиотека — все книги Михаила Пака для бесплатного скачивания</span>
               </div>
-              <i class="fas fa-arrow-right"></i>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
 
             <a href="https://library-koresaram.com/shop/product/pak-mihail-pisatel-i-hudozhnik" target="_blank" rel="noopener" class="buy-card">
@@ -713,14 +666,14 @@
                 <strong>Библиотека Корё Сарам</strong>
                 <span>Биография, ссылки на произведения, рассказ «Кот Захарка» онлайн</span>
               </div>
-              <i class="fas fa-arrow-right"></i>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
 
           </div>
         </div>
 
         <div class="buy-section">
-          <h3 class="buy-section-title"><i class="fas fa-globe-asia"></i> Корейские издания</h3>
+          <h3 class="buy-section-title"><i class="fas fa-globe-asia" aria-hidden="true"></i> Корейские издания</h3>
           <div class="buy-cards">
 
             <a href="https://store.kyobobook.co.kr/person/detail/1113387501" target="_blank" rel="noopener" class="buy-card">
@@ -729,7 +682,7 @@
                 <strong>Kyobo Book Store</strong>
                 <span>박미하일 (박 미하일) — все корейские издания автора: 따뜻한 영혼, 예올리, 밤은 태양이다 и др.</span>
               </div>
-              <i class="fas fa-arrow-right"></i>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
 
           </div>
@@ -748,56 +701,56 @@
       </div>
       <div class="links-grid">
         <a href="https://koryo-saram.site/tag/mihail-pak/" target="_blank" rel="noopener" class="link-card">
-          <i class="fas fa-globe"></i>
+          <i class="fas fa-globe" aria-hidden="true"></i>
           <div>
             <strong>Корё Сарам</strong>
             <span>Статьи, интервью, произведения, биография</span>
           </div>
         </a>
         <a href="https://www.livelib.ru/author/1021617-mihail-pak" target="_blank" rel="noopener" class="link-card">
-          <i class="fas fa-book-reader"></i>
+          <i class="fas fa-book-reader" aria-hidden="true"></i>
           <div>
             <strong>LiveLib</strong>
             <span>Биография, книги, отзывы читателей</span>
           </div>
         </a>
         <a href="https://www.velykoross.ru/authors/all/author_1331/info/" target="_blank" rel="noopener" class="link-card">
-          <i class="fas fa-pen-alt"></i>
+          <i class="fas fa-pen-alt" aria-hidden="true"></i>
           <div>
             <strong>Великороссъ</strong>
             <span>Профиль автора на портале</span>
           </div>
         </a>
         <a href="https://koreilbo.com/news/dostoynyy_chelovek_ladit_so_vsemi17/" target="_blank" rel="noopener" class="link-card">
-          <i class="fas fa-newspaper"></i>
+          <i class="fas fa-newspaper" aria-hidden="true"></i>
           <div>
             <strong>Корё Ильбо</strong>
             <span>Интервью «Достойный человек ладит со всеми»</span>
           </div>
         </a>
         <a href="https://www.ng.ru/person/2019-08-22/10_944_persona.html" target="_blank" rel="noopener" class="link-card">
-          <i class="fas fa-newspaper"></i>
+          <i class="fas fa-newspaper" aria-hidden="true"></i>
           <div>
             <strong>Независимая газета</strong>
             <span>«Жаль, что в детстве я не стал пингвином» — интервью 2019</span>
           </div>
         </a>
         <a href="https://koryo-saram.site/mihailu-paku-75/" target="_blank" rel="noopener" class="link-card">
-          <i class="fas fa-birthday-cake"></i>
+          <i class="fas fa-birthday-cake" aria-hidden="true"></i>
           <div>
             <strong>Михаилу Паку — 75</strong>
             <span>Юбилейная статья на Корё Сарам</span>
           </div>
         </a>
         <a href="https://krasninar.livejournal.com/144174.html" target="_blank" rel="noopener" class="link-card">
-          <i class="fab fa-blogger"></i>
+          <i class="fab fa-blogger" aria-hidden="true"></i>
           <div>
             <strong>LiveJournal</strong>
             <span>«Художник-писатель, писатель-художник Михаил Пак»</span>
           </div>
         </a>
         <a href="https://www.youtube.com/watch?v=w2b2vJv_j_w" target="_blank" rel="noopener" class="link-card">
-          <i class="fab fa-youtube"></i>
+          <i class="fab fa-youtube" aria-hidden="true"></i>
           <div>
             <strong>YouTube</strong>
             <span>Документальный фильм Германа Кима о Михаиле Паке</span>
@@ -806,6 +759,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -841,7 +795,7 @@
   <div class="lightbox" id="lightbox">
     <div class="lightbox-overlay" id="lightbox-overlay"></div>
     <div class="lightbox-content">
-      <button class="lightbox-close" id="lightbox-close"><i class="fas fa-times"></i></button>
+      <button class="lightbox-close" id="lightbox-close" aria-label="Закрыть"><i class="fas fa-times" aria-hidden="true"></i></button>
       <img src="" alt="" id="lightbox-img">
       <p class="lightbox-caption" id="lightbox-caption"></p>
     </div>
