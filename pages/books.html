@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Книги Михаила Пака - полный список произведений с описаниями</title>
+  <meta name="description" content="Полный список книг Михаила Пака: романы, повести, рассказы. Описания, год издания, где купить и скачать произведения.">
+  <meta name="keywords" content="книги Михаила Пака, произведения, романы, повести, рассказы, библиография, купить книги, скачать">
+  <link rel="canonical" href="https://dimgo66.github.io/mpark/pages/books.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Книги Михаила Пака - полный список произведений">
+  <meta property="og:description" content="Все книги Михаила Пака: романы, повести, рассказы с описаниями и ссылками для покупки.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/dimgo66/mpark/main/icons/og-image.png">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dimgo66.github.io/mpark/pages/books.html">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .books-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .books-header {
+      margin-bottom: 40px;
+    }
+    .books-title {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: var(--clr-ink);
+    }
+    .books-subtitle {
+      font-size: 1.2rem;
+      color: var(--clr-text-muted);
+      margin-bottom: 30px;
+    }
+    .books-filter {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      padding: 8px 16px;
+      background: var(--clr-soft);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .filter-btn.active {
+      background: var(--clr-warm);
+      color: white;
+      border-color: var(--clr-warm);
+    }
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .book-card {
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius);
+      padding: 20px;
+      transition: var(--transition);
+    }
+    .book-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-5px);
+    }
+    .book-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: var(--clr-ink);
+    }
+    .book-meta {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      font-size: 0.9rem;
+      color: var(--clr-text-muted);
+    }
+    .book-year {
+      font-weight: bold;
+      color: var(--clr-warm);
+    }
+    .book-description {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .book-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .book-link {
+      padding: 6px 12px;
+      background: var(--clr-soft);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      text-decoration: none;
+      color: var(--clr-text);
+    }
+    .book-link.buy {
+      background: var(--clr-warm);
+      color: white;
+    }
+    .book-link.download {
+      background: var(--clr-sage);
+      color: white;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      background: var(--clr-warm);
+      color: white;
+      border-radius: var(--radius);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-kr">박미하일</span>
+        <span class="logo-sep">|</span>
+        <span class="logo-ru">Михаил Пак</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="books-container">
+    <div class="books-header">
+      <h1 class="books-title">Книги Михаила Пака</h1>
+      <p class="books-subtitle">Полный список произведений с описаниями и ссылками для покупки</p>
+      
+      <div class="books-filter">
+        <button class="filter-btn active" data-filter="all">Все книги</button>
+        <button class="filter-btn" data-filter="novel">Романы и повести</button>
+        <button class="filter-btn" data-filter="story">Рассказы</button>
+        <button class="filter-btn" data-filter="korean">Корейские издания</button>
+      </div>
+    </div>
+
+    <div class="books-grid">
+      <!-- Роман "Лёгкое путешествие по реке" -->
+      <div class="book-card" data-category="novel">
+        <h3>Лёгкое путешествие по реке</h3>
+        <div class="book-meta">
+          <span class="book-type">Роман</span>
+          <span class="book-year">2007</span>
+        </div>
+        <div class="book-description">
+          Философский роман о поиске смысла жизни, памяти и времени. Лауреат премии им. Валентина Катаева (2007).
+        </div>
+        <div class="book-links">
+          <a href="https://www.ozon.ru/product/natyurmort-s-yablokami-legkoe-puteshestvie-po-reke-tanets-beloy-kuritsy-muravinyy-gorod-t-2-3503256498/" class="book-link buy" target="_blank">Купить на OZON</a>
+          <a href="https://royallib.com/book/pak_mihail/legkoe_puteshestvie_po_reke.html" class="book-link download" target="_blank">Скачать</a>
+        </div>
+      </div>
+
+      <!-- Повесть "Натюрморт с яблоками" -->
+      <div class="book-card" data-category="novel">
+        <h3>Натюрморт с яблоками</h3>
+        <div class="book-meta">
+          <span class="book-type">Повесть</span>
+          <span class="book-year">2001</span>
+        </div>
+        <div class="book-description">
+          Лирическая повесть о детстве, искусстве и первых открытиях. Лауреат премии им. Валентина Катаева (2001).
+        </div>
+        <div class="book-links">
+          <a href="https://www.ozon.ru/product/natyurmort-s-yablokami-legkoe-puteshestvie-po-reke-tanets-beloy-kuritsy-muravinyy-gorod-t-2-3503256498/" class="book-link buy" target="_blank">Купить на OZON</a>
+          <a href="https://royallib.com/book/pak_mihail/natyurmort_s_yablokami.html" class="book-link download" target="_blank">Скачать</a>
+        </div>
+      </div>
+
+      <!-- Сборник "Облака на юге" -->
+      <div class="book-card" data-category="story">
+        <h3>Облака на юге</h3>
+        <div class="book-meta">
+          <span class="book-type">Сборник рассказов</span>
+          <span class="book-year">2010</span>
+        </div>
+        <div class="book-description">
+          Сборник рассказов о корейской диаспоре, ностальгии и культурной идентичности. Лауреат премии им. Куприна «Гранатовый браслет».
+        </div>
+        <div class="book-links">
+          <a href="https://royallib.com/book/pak_mihail/oblaka_na_yuge.html" class="book-link download" target="_blank">Скачать</a>
+        </div>
+      </div>
+
+      <!-- Роман "Муравьиный город" -->
+      <div class="book-card" data-category="novel">
+        <h3>Муравьиный город</h3>
+        <div class="book-meta">
+          <span class="book-type">Повесть</span>
+          <span class="book-year">2012</span>
+        </div>
+        <div class="book-description">
+          Социально-философская повесть о жизни в современном мегаполисе, одиночестве и человеческих связях.
+        </div>
+        <div class="book-links">
+          <a href="https://royallib.com/book/pak_mihail/muraviniy_gorod.html" class="book-link download" target="_blank">Скачать</a>
+        </div>
+      </div>
+
+      <!-- Корейское издание "Тёплая душа" -->
+      <div class="book-card" data-category="korean">
+        <h3>따뜻한 영혼 (Тёплая душа)</h3>
+        <div class="book-meta">
+          <span class="book-type">Сборник на корейском</span>
+          <span class="book-year">2005</span>
+        </div>
+        <div class="book-description">
+          Избранные произведения Михаила Пака в переводе на корейский язык. Издано в Сеуле.
+        </div>
+        <div class="book-links">
+          <a href="https://store.kyobobook.co.kr/person/detail/1113387501" class="book-link buy" target="_blank">Kyobo Book</a>
+        </div>
+      </div>
+
+      <!-- Корейское издание "Эолли" -->
+      <div class="book-card" data-category="korean">
+        <h3>예올리 (Эолли)</h3>
+        <div class="book-meta">
+          <span class="book-type">Роман на корейском</span>
+          <span class="book-year">2008</span>
+        </div>
+        <div class="book-description">
+          Роман, признанный «Книгой года» в Южной Корее. История корейской семьи в России.
+        </div>
+        <div class="book-links">
+          <a href="https://store.kyobobook.co.kr/person/detail/1113387501" class="book-link buy" target="_blank">Kyobo Book</a>
+        </div>
+      </div>
+
+      <!-- Рассказ "Дождь" -->
+      <div class="book-card" data-category="story">
+        <h3>Дождь</h3>
+        <div class="book-meta">
+          <span class="book-type">Рассказ</span>
+          <span class="book-year">1999</span>
+        </div>
+        <div class="book-description">
+          Рассказ, удостоенный премии журнала «Korean Expatriate Literature» (Лос-Анджелес, 1999).
+        </div>
+        <div class="book-links">
+          <a href="https://koryo-saram.site/proizvedeniya-mihaila-paka/" class="book-link" target="_blank">Читать онлайн</a>
+        </div>
+      </div>
+
+      <!-- Рассказ "Подсолнух" -->
+      <div class="book-card" data-category="story">
+        <h3>Подсолнух</h3>
+        <div class="book-meta">
+          <span class="book-type">Рассказ</span>
+          <span class="book-year">2001</span>
+        </div>
+        <div class="book-description">
+          Рассказ, получивший премию корейского ПЕН-клуба (Сеул, 2001).
+        </div>
+        <div class="book-links">
+          <a href="https://koryo-saram.site/proizvedeniya-mihaila-paka/" class="book-link" target="_blank">Читать онлайн</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="../index.html#books" class="back-link">← Вернуться на главную</a>
+  </main>
+
+  <script>
+    // Фильтрация книг
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const bookCards = document.querySelectorAll('.book-card');
+      
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // Удаляем активный класс у всех кнопок
+          filterBtns.forEach(b => b.classList.remove('active'));
+          // Добавляем активный класс текущей кнопке
+          this.classList.add('active');
+          
+          const filter = this.getAttribute('data-filter');
+          
+          // Показываем/скрываем карточки
+          bookCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+  
+  <script src="../js/analytics.js" defer></script>
+</body>
+</html>

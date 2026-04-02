@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  
+  <!-- Главная страница -->
+  <url>
+    <loc>https://dimgo66.github.io/mpark/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- Изображения на главной -->
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/dimgo66/mpark/main/icons/og-image.png</image:loc>
+      <image:title>Михаил Пак — писатель и художник</image:title>
+      <image:caption>Портрет Михаила Тимофеевича Пака</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://static.wixstatic.com/media/1dc050_b9bcbd909fa649528b1a3ca0d6bbe82b~mv2.jpg</image:loc>
+      <image:title>Михаил Пак портрет</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Дополнительные страницы -->
+  <url>
+    <loc>https://dimgo66.github.io/mpark/pages/biography.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://dimgo66.github.io/mpark/pages/books.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Виртуальные страницы для разделов (якорные ссылки) -->
+  <url>
+    <loc>https://dimgo66.github.io/mpark/#about</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dimgo66.github.io/mpark/#art</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dimgo66.github.io/mpark/#gallery</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    
+    <!-- Изображения галереи -->
+    <image:image>
+      <image:loc>https://koryo-saram.site/wp-content/uploads/2014/01/knigi2.jpg</image:loc>
+      <image:title>Корейские мотивы. Чеджудо</image:title>
+      <image:caption>Картина из серии «Корейские сопки»</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://library-koresaram.com/thumb/2/11S7-X6B7ESiJwp_9mbnIg/r/d/b2597120689.gif</image:loc>
+      <image:title>Обложка книги «Избранные сочинения»</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://img.youtube.com/vi/VClqwpkoSrY/maxresdefault.jpg</image:loc>
+      <image:title>Выставка в Сеуле, галерея Инсадон</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://dimgo66.github.io/mpark/#books</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dimgo66.github.io/mpark/#vtornik</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://dimgo66.github.io/mpark/#buy</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Внешние ресурсы (для информации) -->
+  <url>
+    <loc>https://koryo-saram.site/tag/mihail-pak/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ozon.ru/product/belye-ozera-noch-eto-tozhe-solntse-mandariny-dlya-helen-izbrannye-sochineniya-t-1-pak-mihail-3392160876/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>

@@ -3,39 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Михаил Пак — писатель и художник</title>
-  <meta name="description" content="Михаил Тимофеевич Пак — российский корейский писатель и художник. Биография, галерея картин, литературные произведения, ссылки на публикации.">
+  <title>Михаил Пак — писатель и художник | Биография, картины, книги, премии</title>
+  <meta name="description" content="Михаил Тимофеевич Пак — российский корейский писатель и художник. Биография, галерея картин, литературные произведения, ссылки на публикации. Член Союза писателей и Союза художников России. Номинант Букеровской премии.">
+  <meta name="keywords" content="Михаил Пак, Михаил Тимофеевич Пак, писатель, художник, корейский писатель, корё сарам, картины, книги, биография, выставки, премии, литература, живопись">
+  <meta name="author" content="Михаил Тимофеевич Пак">
+  <link rel="canonical" href="https://dimgo66.github.io/mpark/">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dimgo66.github.io/mpark/">
-  <meta property="og:title" content="Михаил Пак — писатель и художник">
-  <meta property="og:description" content="Михаил Тимофеевич Пак — российский корейский писатель и художник. Биография, галерея картин, литературные произведения.">
+  <meta property="og:title" content="Михаил Пак — писатель и художник | Биография, картины, книги">
+  <meta property="og:description" content="Михаил Тимофеевич Пак — российский корейский писатель и художник. Биография, галерея картин, литературные произведения, премии и выставки.">
   <meta property="og:image" content="https://raw.githubusercontent.com/dimgo66/mpark/main/icons/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Фавикон с корейским иероглифом 박">
+  <meta property="og:image:alt" content="Михаил Пак — писатель и художник">
   <meta property="og:site_name" content="Михаил Пак">
+  <meta property="og:locale" content="ru_RU">
   
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://dimgo66.github.io/mpark/">
   <meta name="twitter:title" content="Михаил Пак — писатель и художник">
   <meta name="twitter:description" content="Михаил Тимофеевич Пак — российский корейский писатель и художник. Биография, галерея картин, литературные произведения.">
   <meta name="twitter:image" content="https://raw.githubusercontent.com/dimgo66/mpark/main/icons/og-image.png">
-  <meta name="twitter:image:alt" content="Фавикон с корейским иероглифом 박">
+  <meta name="twitter:image:alt" content="Михаил Пак — писатель и художник">
   
   <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
   <link rel="manifest" href="icons/site.webmanifest">
   <meta name="theme-color" content="#1a1a2e">
+  
+  <!-- SEO Meta -->
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+  <meta name="yandex" content="index, follow">
+  <meta name="geo.region" content="RU-MOW">
+  <meta name="geo.placename" content="Москва">
+  <meta name="geo.position" content="55.7558;37.6173">
+  <meta name="ICBM" content="55.7558, 37.6173">
+  
   <!-- Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Preload критичных шрифтов -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap"></noscript>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"></noscript>
+  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+  <!-- Inline критичный CSS для ускорения отображения -->
+  <style>
+    /* Критичный CSS для первого экрана */
+    .site-header, .hero, .hero-title, .hero-sub, .hero-cta {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+  </style>
+  
+  <!-- Аналитика (требует настройки ID) -->
+  <script>
+    // Временный скрипт для отслеживания без настроенных ID
+    // Для активации аналитики замените ID в файле js/analytics.js
+    window.addEventListener('load', function() {
+      console.log('SEO оптимизация активирована. Для подключения аналитики настройте ID в js/analytics.js');
+    });
+  </script>
 </head>
 <body>
 
@@ -68,8 +120,8 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-tag">Писатель · Художник · Переводчик</p>
-      <h1 class="hero-title">Михаил<br>Тимофеевич<br>Пак</h1>
-      <p class="hero-sub">Роман — это картина словами.<br>Картина — это роман без слов.</p>
+      <h1 class="hero-title">Михаил Тимофеевич Пак — писатель и художник</h1>
+      <p class="hero-sub">Роман — это картина словами. Картина — это роман без слов.</p>
       <div class="hero-cta">
         <a href="#about" class="btn btn-light">О художнике</a>
         <a href="#gallery" class="btn btn-outline">Галерея</a>
@@ -89,7 +141,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">О художнике</span>
-        <h2 class="section-title">Биография</h2>
+        <h2 class="section-title">Биография Михаила Пака</h2>
       </div>
       <div class="about-grid">
         <div class="about-photo-col">
@@ -166,7 +218,7 @@
     <div class="container">
       <div class="section-header section-header--light">
         <span class="section-tag">Изобразительное искусство</span>
-        <h2 class="section-title">Живопись</h2>
+        <h2 class="section-title">Живопись Михаила Пака</h2>
       </div>
       <div class="art-intro">
         <p>Живопись Михаила Пака — это воплощение того же гуманистического мировоззрения, что и его проза. Тонкая работа с цветом, поэтические мотивы, внутренняя гармония — художника называют лириком в обоих видах искусства.</p>
@@ -226,8 +278,8 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Галерея</span>
-        <h2 class="section-title">Картины</h2>
-        <p class="section-desc">Работы Михаила Пака из открытых источников и публикаций</p>
+        <h2 class="section-title">Картины и галерея работ</h2>
+        <p class="section-desc">Работы Михаила Пака из открытых источников и публикаций. Картины, выставки, художественные произведения.</p>
       </div>
       <div class="gallery-grid">
 
@@ -300,8 +352,8 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Литература</span>
-        <h2 class="section-title">Книги и произведения</h2>
-        <p class="section-desc">Михаил Пак — автор девяти книг прозы, опубликованных в России и Южной Корее</p>
+        <h2 class="section-title">Книги и произведения Михаила Пака</h2>
+        <p class="section-desc">Михаил Пак — автор девяти книг прозы, опубликованных в России и Южной Корее. Романы, повести, рассказы.</p>
       </div>
 
       <div class="books-tabs">
@@ -473,7 +525,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Публикации</span>
-        <h2 class="section-title">Журнал «Вторник»</h2>
+        <h2 class="section-title">Публикации в журнале «Вторник»</h2>
         <p class="section-desc">Михаил Пак — постоянный автор литературного журнала «Вторник». Его произведения выходят практически в каждом номере.</p>
       </div>
 
@@ -611,8 +663,8 @@
     <div class="container">
       <div class="section-header section-header--light">
         <span class="section-tag">Приобрести книги</span>
-        <h2 class="section-title">Купить и скачать</h2>
-        <p class="section-desc" style="color:rgba(255,255,255,0.7)">Избранные сочинения Михаила Пака доступны на ведущих книжных платформах</p>
+        <h2 class="section-title">Купить и скачать книги Михаила Пака</h2>
+        <p class="section-desc" style="color:rgba(255,255,255,0.7)">Избранные сочинения Михаила Пака доступны на ведущих книжных платформах. Покупка, заказ, бесплатное скачивание.</p>
       </div>
 
       <div class="buy-grid">
@@ -712,7 +764,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Ресурсы</span>
-        <h2 class="section-title">Полезные ссылки</h2>
+        <h2 class="section-title">Полезные ссылки и ресурсы</h2>
       </div>
       <div class="links-grid">
         <a href="https://koryo-saram.site/tag/mihail-pak/" target="_blank" rel="noopener" class="link-card">
@@ -771,6 +823,23 @@
             <span>Документальный фильм Германа Кима о Михаиле Паке</span>
           </div>
         </a>
+        
+        <!-- Ссылки на дополнительные страницы сайта -->
+        <a href="pages/biography.html" class="link-card">
+          <i class="fas fa-user-circle" aria-hidden="true"></i>
+          <div>
+            <strong>Подробная биография</strong>
+            <span>Полная история жизни и творчества Михаила Пака</span>
+          </div>
+        </a>
+        
+        <a href="pages/books.html" class="link-card">
+          <i class="fas fa-book" aria-hidden="true"></i>
+          <div>
+            <strong>Все книги</strong>
+            <span>Полный список произведений с описаниями и ссылками</span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -792,6 +861,8 @@
           <a href="#books">Книги</a>
           <a href="#vtornik">«Вторник»</a>
           <a href="#buy">Купить</a>
+          <a href="pages/biography.html">Подробная биография</a>
+          <a href="pages/books.html">Все книги</a>
         </div>
         <div class="footer-ext">
           <a href="https://koryo-saram.site/tag/mihail-pak/" target="_blank" rel="noopener">Корё Сарам</a>
@@ -816,6 +887,134 @@
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/image-optimizer.js" defer></script>
+  <script src="js/analytics.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+  <!-- Schema.org микроразметка -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://dimgo66.github.io/mpark/#person",
+        "name": "Михаил Тимофеевич Пак",
+        "alternateName": ["Михаил Пак", "Mikhail Pak"],
+        "description": "Российский корейский писатель и художник, член Союза писателей России и Союза художников России.",
+        "birthDate": "1949",
+        "birthPlace": "Аккурган, Узбекистан",
+        "nationality": "Российская Федерация",
+        "gender": "Male",
+        "jobTitle": "Писатель, художник, переводчик",
+        "knowsLanguage": ["ru", "ko"],
+        "memberOf": [
+          {
+            "@type": "Organization",
+            "name": "Союз писателей России"
+          },
+          {
+            "@type": "Organization",
+            "name": "Союз художников России"
+          }
+        ],
+        "award": [
+          "Премия журнала «Korean Expatriate Literature» (1999)",
+          "Премия корейского ПЕН-клуба (2001)",
+          "Премия им. Валентина Катаева (2001, 2007)",
+          "Премия государственной телерадиокомпании KBS (2006)",
+          "Премия им. Куприна «Гранатовый браслет» (2010)",
+          "Премия Союза писателей Южной Кореи (2012)"
+        ],
+        "sameAs": [
+          "https://koryo-saram.site/tag/mihail-pak/",
+          "https://www.vtornik.online/autors/пак",
+          "https://royallib.com/author/pak_mihail.html",
+          "https://www.livelib.ru/author/1021617-mihail-pak"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://dimgo66.github.io/mpark/#website",
+        "url": "https://dimgo66.github.io/mpark/",
+        "name": "Михаил Пак — писатель и художник",
+        "description": "Сайт-портфолио писателя и художника Михаила Тимофеевича Пака",
+        "publisher": {
+          "@id": "https://dimgo66.github.io/mpark/#person"
+        },
+        "inLanguage": "ru-RU"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://dimgo66.github.io/mpark/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Главная",
+            "item": "https://dimgo66.github.io/mpark/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Биография",
+            "item": "https://dimgo66.github.io/mpark/#about"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Живопись",
+            "item": "https://dimgo66.github.io/mpark/#art"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Галерея",
+            "item": "https://dimgo66.github.io/mpark/#gallery"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Книги",
+            "item": "https://dimgo66.github.io/mpark/#books"
+          }
+        ]
+      },
+      {
+        "@type": "Book",
+        "name": "Лёгкое путешествие по реке",
+        "author": {
+          "@id": "https://dimgo66.github.io/mpark/#person"
+        },
+        "bookFormat": "https://schema.org/Paperback",
+        "datePublished": "2007",
+        "isbn": "",
+        "publisher": "Издательство неизвестно",
+        "award": "Премия им. Валентина Катаева (2007)"
+      },
+      {
+        "@type": "Book",
+        "name": "Натюрморт с яблоками",
+        "author": {
+          "@id": "https://dimgo66.github.io/mpark/#person"
+        },
+        "bookFormat": "https://schema.org/Paperback",
+        "datePublished": "2001",
+        "award": "Премия им. Валентина Катаева (2001)"
+      },
+      {
+        "@type": "VisualArtwork",
+        "name": "Корейские мотивы. Чеджудо",
+        "creator": {
+          "@id": "https://dimgo66.github.io/mpark/#person"
+        },
+        "artform": "Живопись",
+        "artMedium": "Масло на холсте",
+        "description": "Картина из серии «Корейские сопки»"
+      }
+    ]
+  }
+  </script>
+
 </body>
 </html>
