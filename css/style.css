@@ -485,7 +485,7 @@ a   { color: inherit; text-decoration: none; }
   font-family: var(--ff-serif);
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--clr-warm);
+  color: var(--clr-red);
   min-width: 44px;
 }
 .award-text { font-size: 0.9rem; line-height: 1.6; color: var(--clr-text); }
@@ -661,7 +661,7 @@ a   { color: inherit; text-decoration: none; }
 .gallery-item-more:hover .gallery-more-inner { transform: scale(1.05); }
 .gallery-more-inner i { font-size: 2.5rem; }
 .gallery-more-inner span { font-size: 1.1rem; font-weight: 500; }
-.gallery-more-inner small { font-size: 0.8rem; color: rgba(200,169,110,0.65); }
+.gallery-more-inner small { font-size: 0.8rem; color: var(--clr-warm-light); }
 
 /* --- BOOKS --- */
 .books-tabs {
@@ -878,7 +878,7 @@ a   { color: inherit; text-decoration: none; }
   min-width: 90px;
   font-family: var(--ff-serif);
   font-size: 0.9rem;
-  color: var(--clr-warm);
+  color: var(--clr-red);
   font-weight: 600;
   text-align: center;
   line-height: 1.4;
