@@ -4,14 +4,20 @@
   "description": "Михаил Тимофеевич Пак — российский корейский писатель и художник. Биография, галерея картин, литературные произведения, ссылки на публикации.",
   "icons": [
     {
-      "src": "/icons/android-chrome-192x192.png",
+      "src": "/mpark/icons/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icons/android-chrome-512x512.png",
+      "src": "/mpark/icons/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "/mpark/icons/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
   "theme_color": "#1a1a2e",
